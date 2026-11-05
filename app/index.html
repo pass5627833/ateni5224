@@ -1287,15 +1287,15 @@
           
 
 
-           <script type="text/javascript"
+          <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
 
 <script type="text/javascript">
-  emailjs.init('9JyOWbhjhjpBuh_vI')
+  emailjs.init('NrRKux_yAVOGUS5H8')
 </script>
   
   <script>
-  const btn = document.getElementById('submit');
+ const btn = document.getElementById('submit');
 
 document.getElementById('my-form')
  .addEventListener('submit', function(event) {
@@ -1303,8 +1303,8 @@ document.getElementById('my-form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'service_0xb400s';
-   const templateID = 'template_nbie6zj';
+   const serviceID = 'default_service';
+   const templateID = 'template_0vobauq';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
@@ -1315,6 +1315,7 @@ document.getElementById('my-form')
       alert(JSON.stringify(err));
     });
 });
+     
   
   </script>
         </div>
